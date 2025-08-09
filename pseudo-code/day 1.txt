@@ -1,0 +1,53 @@
+START
+Define class Pet{
+	Attribute name
+	Attribute age
+	Attribute color
+
+	constructer(name , age , color)
+	{
+	SET this.name=name
+	SET this.age=age
+	SET this.color=color
+		
+define class Dog extends Pet{
+	ATTRIBUTE bread
+	ATTRIBUTE color
+	
+}
+
+define class Cat extends Pet{
+	ATTRIBUTE bread
+	ATTRIBUTE color
+}
+
+define class Bird extends Pet{
+	ATTRIBUTE bread
+	ATTRIBUTE color
+}
+
+
+}
+
+END
+
+
+Question-2
+
+
+Library Membership Tracker
+
+START
+define class Member 
+{
+ATTRIBUTE ID
+ATTRIBUTE name
+ATTRIBUTE membership_date
+
+create Boolean method{
+	if membership_date and ID ? valid otherwise invalid 
+}
+
+}
+
+END
