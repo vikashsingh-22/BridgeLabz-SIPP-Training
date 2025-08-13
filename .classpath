@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="LibraryCheckoutSystem/Day2_ProgrammingElements/src"/>
+	<classpathentry kind="src" path="src/Day4_Object_modeling_Object_relationships_and_Communication"/>
+	<classpathentry kind="src" path="src/Day5_Inheritance"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

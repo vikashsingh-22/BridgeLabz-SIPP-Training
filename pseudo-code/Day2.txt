@@ -1,0 +1,72 @@
+Start
+Define Enum TrafficLight
+	Red
+	Green
+	Yellow
+End Enum
+
+Define Class TrafficSignal
+PRIVATE currentLight: TrafficLight
+
+CONSTRUCTOR TrafficSignal()
+currentLight = TrafficLight.RED
+END CONSTRUCTOR
+
+METHOD changeLight()
+      SWITCH (currentLight)
+           CASE RED:
+               currentLight = GREEN
+           CASE GREEN:
+               currentLight = YELLOW
+           CASE YELLOW:
+               currentLight = RED
+        END SWITCH
+    END METHOD
+
+    METHOD displayLight()
+        PRINT "Current Light "    
+END METHOD
+END CLASS
+
+END
+
+
+
+
+
+
+
+Question 1:-
+
+part 2:-
+START
+DEFINE Interface Crop
+{
+METHOD waterRequirement()
+METHOD harvesting()
+}
+
+DEFINE CLASS Rice Implements Crop
+{
+METHOD waterRequirement()
+{
+PRINT "Rice requires about 1200 mm water per season."
+}
+METHOD harvesting()
+{
+PRINT "Rice is harvested using combine harvesters."
+}
+}
+DEFINE CLASS Wheat EXTENDS Crop
+{
+METHOD waterRequirement()
+{
+PRINT "Wheat requires about 450 mm water per season."
+}
+METHOD harvesting()
+{
+PRINT "Wheat is harvested using sickles or harvesters."
+}
+}
+END
+
