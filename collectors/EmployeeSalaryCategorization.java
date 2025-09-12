@@ -5,7 +5,6 @@ import java.util.stream.Collectors;
 
 public class EmployeeSalaryCategorization {
 
-    // Helper record for the example
     record Employee(String department, double salary) {}
 
     public static void main(String[] args) {
@@ -20,8 +19,7 @@ public class EmployeeSalaryCategorization {
                 new Employee("Engineering", 75000)
         );
 
-        // Groups employees by department and calculates the average salary for each
-        // department using Collectors.averagingDouble().
+        
         Map<String, Double> avgSalaryByDept = employees.stream()
                 .collect(Collectors.groupingBy(
                         Employee::department,
